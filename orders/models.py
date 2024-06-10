@@ -12,6 +12,7 @@ class OrderitemQueryset(models.QuerySet):
         if self:
             return sum(cart.quantity for cart in self)
         return 0
+    
 
 class Order(models.Model):
     user = models.ForeignKey(to=User, on_delete=models.SET_DEFAULT, blank=True, null=True, verbose_name="Пользователь", default=None)
