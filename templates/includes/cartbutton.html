@@ -26,10 +26,6 @@
                     {% include "carts/includes/incl_cart.html" %}
                     <!-- Закончилась разметка корзины -->
                 </div>
-                {% if carts %} <a class="btn btn-dark" href="{% url "orders:create_order" %}">
-                    Оформить заказ
-                </a>{% endif %}
-                
             </div>
         </div>
     </div>

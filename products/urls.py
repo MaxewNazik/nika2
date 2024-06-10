@@ -2,7 +2,7 @@ from django.urls import path
 
 from products import views
 
-app_name="catalog"
+app_name="products"
 
 urlpatterns = [
     path('<slug:category_slyg>/', views.catalog, name='index'),
