@@ -18,6 +18,8 @@ def login(request):
                auth.login(request, user)
                messages.success(request, f"{user.username}, вы вошли в аккаунт")
                return HttpResponseRedirect (reverse('main:index'))
+               
+               session_key=request.session.session_key
     else:
         form=UserLoginForm()
     
