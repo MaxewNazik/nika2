@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-go3=wyz4k96w^in(#5)kot*)bix1&f@_ke)jv*n#nn++lylvj)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -94,7 +94,7 @@ DATABASES = {
 }
 '''
 
-DATABASE={
+DATABASES={
     'default': dj_database_url.parse('postgres://nika_689z_user:ETFl63hwQRgEpl8kOJatRFNUMw2HQ6bf@dpg-cpjma8v109ks73eopa90-a.frankfurt-postgres.render.com/nika_689z')
 }
 
