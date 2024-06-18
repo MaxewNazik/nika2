@@ -23,7 +23,7 @@ def catalog(request, category_slyg=None):
     if order_by and order_by != "default":
         products=products.order_by(order_by)
 
-    paginator= Paginator(products, 3)   
+    paginator= Paginator(products, 6)   
     cur_page = paginator.page(int(page))
 
     context = {
