@@ -25,8 +25,18 @@ SECRET_KEY = 'django-insecure-go3=wyz4k96w^in(#5)kot*)bix1&f@_ke)jv*n#nn++lylvj)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['31.128.40.20', '31.128.40.20:8000']
 
+
+CSRF_TRUSTED_ORIGINS = [    
+    "http://31.128.40.20/"
+]
+
+CORS_ALLOWED_ORIGINS = [
+ 
+    "http://31.128.40.20/"
+]
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
 # Application definition
 
@@ -88,10 +98,10 @@ WSGI_APPLICATION = 'nika.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'nika',
-        'USER': 'nika',
-        'PASSWORD': 'adm',
-        'HOST': 'localhost',
+        'NAME': 'default_db',
+        'USER': 'cloud_user',
+        'PASSWORD': '&bR36C1QABbL',
+        'HOST': 'ponafrusnou.beget.app',
         'PORT': '5432',
     }
 }
