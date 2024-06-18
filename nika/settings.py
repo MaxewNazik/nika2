@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -83,7 +84,7 @@ WSGI_APPLICATION = 'nika.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -94,12 +95,12 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-'''
 
+'''
 DATABASES={
     'default': dj_database_url.parse('postgres://nika_689z_user:ETFl63hwQRgEpl8kOJatRFNUMw2HQ6bf@dpg-cpjma8v109ks73eopa90-a.frankfurt-postgres.render.com/nika_689z')
 }
-
+'''
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
