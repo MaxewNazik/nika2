@@ -16,7 +16,6 @@ packaging==24.1
 parso==0.8.4
 pillow==10.3.0
 prompt_toolkit==3.0.45
-psycopg2==2.9.9
 psycopg2-binary==2.9.9
 pure-eval==0.2.2
 Pygments==2.18.0
