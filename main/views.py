@@ -20,7 +20,8 @@ def about(request):
     context = {
         'title':'Home - Информация о нас',
         'content' :'О нас',
-        'text_on_page':'Ника - это магазин по продаже керамической плитки и керамического гранита'
+        'text_on_page':'Ника - это магазин по продаже керамической плитки и керамического гранита',
+        'text_on_page':'Наши контакты: Номер телефона - 8(900)-000-00-00. Почта - pochta@mail.ru'
 
     }
     return render (request,'main/about.html', context)
