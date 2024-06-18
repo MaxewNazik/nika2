@@ -46,7 +46,7 @@ def cart_add(request):
     return JsonResponse (response_data)
             
 
-def cart_change(request, product_slyg):
+def cart_change(request):
     cart_id = request.POST.get("cart_id")
     quantity = request.POST.get("quantity")
     cart = Cart.objects.get(id=cart_id)
